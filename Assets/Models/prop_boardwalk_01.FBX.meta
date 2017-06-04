@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 0d8f3f09d0eb6d543abfbf38661df0f8
+timeCreated: 1496587040
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: prop_boardwalk_01
+    100002: //RootNode
+    100004: prop_boardwalk_01_collider01
+    100006: prop_boardwalk_01_collider02
+    100008: prop_boardwalk_01_collider03
+    100010: prop_boardwalk_01_collider04
+    100012: prop_boardwalk_01_collider05
+    100014: prop_boardwalk_01_collider06
+    100016: prop_boardwalk_01_collider07
+    100018: prop_boardwalk_01_collider08
+    100020: prop_boardwalk_01_collider09
+    100022: prop_boardwalk_01_collider10
+    100024: prop_boardwalk_01_collider11
+    100026: prop_boardwalk_01_collider12
+    100028: prop_boardwalk_01_collider13
+    100030: prop_boardwalk_01_collider14
+    100032: prop_boardwalk_01_collider15
+    100034: prop_boardwalk_01_collider16
+    100036: prop_boardwalk_01_collider17
+    100038: prop_boardwalk_02
+    100040: prop_boardwalk_03
+    100042: prop_boardwalk_04
+    100044: prop_boardwalk_05
+    100046: prop_boardwalk_06
+    100048: prop_boardwalk_07
+    100050: prop_boardwalk_08
+    100052: prop_boardwalk_09
+    100054: prop_boardwalk_10
+    400000: //RootNode
+    400002: prop_boardwalk_01
+    400004: prop_boardwalk_01_collider01
+    400006: prop_boardwalk_01_collider02
+    400008: prop_boardwalk_01_collider03
+    400010: prop_boardwalk_01_collider04
+    400012: prop_boardwalk_01_collider05
+    400014: prop_boardwalk_01_collider06
+    400016: prop_boardwalk_01_collider07
+    400018: prop_boardwalk_01_collider08
+    400020: prop_boardwalk_01_collider09
+    400022: prop_boardwalk_01_collider10
+    400024: prop_boardwalk_01_collider11
+    400026: prop_boardwalk_01_collider12
+    400028: prop_boardwalk_01_collider13
+    400030: prop_boardwalk_01_collider14
+    400032: prop_boardwalk_01_collider15
+    400034: prop_boardwalk_01_collider16
+    400036: prop_boardwalk_01_collider17
+    400038: prop_boardwalk_02
+    400040: prop_boardwalk_03
+    400042: prop_boardwalk_04
+    400044: prop_boardwalk_05
+    400046: prop_boardwalk_06
+    400048: prop_boardwalk_07
+    400050: prop_boardwalk_08
+    400052: prop_boardwalk_09
+    400054: prop_boardwalk_10
+    2300000: prop_boardwalk_01
+    2300002: prop_boardwalk_01_collider01
+    2300004: prop_boardwalk_01_collider02
+    2300006: prop_boardwalk_01_collider03
+    2300008: prop_boardwalk_01_collider04
+    2300010: prop_boardwalk_01_collider05
+    2300012: prop_boardwalk_01_collider06
+    2300014: prop_boardwalk_01_collider07
+    2300016: prop_boardwalk_01_collider08
+    2300018: prop_boardwalk_01_collider09
+    2300020: prop_boardwalk_01_collider10
+    2300022: prop_boardwalk_01_collider11
+    2300024: prop_boardwalk_01_collider12
+    2300026: prop_boardwalk_01_collider13
+    2300028: prop_boardwalk_01_collider14
+    2300030: prop_boardwalk_01_collider15
+    2300032: prop_boardwalk_01_collider16
+    2300034: prop_boardwalk_01_collider17
+    2300036: prop_boardwalk_02
+    2300038: prop_boardwalk_03
+    2300040: prop_boardwalk_04
+    2300042: prop_boardwalk_05
+    2300044: prop_boardwalk_06
+    2300046: prop_boardwalk_07
+    2300048: prop_boardwalk_08
+    2300050: prop_boardwalk_09
+    2300052: prop_boardwalk_10
+    3300000: prop_boardwalk_01
+    3300002: prop_boardwalk_01_collider01
+    3300004: prop_boardwalk_01_collider02
+    3300006: prop_boardwalk_01_collider03
+    3300008: prop_boardwalk_01_collider04
+    3300010: prop_boardwalk_01_collider05
+    3300012: prop_boardwalk_01_collider06
+    3300014: prop_boardwalk_01_collider07
+    3300016: prop_boardwalk_01_collider08
+    3300018: prop_boardwalk_01_collider09
+    3300020: prop_boardwalk_01_collider10
+    3300022: prop_boardwalk_01_collider11
+    3300024: prop_boardwalk_01_collider12
+    3300026: prop_boardwalk_01_collider13
+    3300028: prop_boardwalk_01_collider14
+    3300030: prop_boardwalk_01_collider15
+    3300032: prop_boardwalk_01_collider16
+    3300034: prop_boardwalk_01_collider17
+    3300036: prop_boardwalk_02
+    3300038: prop_boardwalk_03
+    3300040: prop_boardwalk_04
+    3300042: prop_boardwalk_05
+    3300044: prop_boardwalk_06
+    3300046: prop_boardwalk_07
+    3300048: prop_boardwalk_08
+    3300050: prop_boardwalk_09
+    3300052: prop_boardwalk_10
+    4300000: prop_boardwalk_01_collider17
+    4300002: prop_boardwalk_01_collider16
+    4300004: prop_boardwalk_01_collider15
+    4300006: prop_boardwalk_01_collider14
+    4300008: prop_boardwalk_01_collider13
+    4300010: prop_boardwalk_01_collider12
+    4300012: prop_boardwalk_01_collider11
+    4300014: prop_boardwalk_01_collider10
+    4300016: prop_boardwalk_01_collider09
+    4300018: prop_boardwalk_01_collider08
+    4300020: prop_boardwalk_01_collider07
+    4300022: prop_boardwalk_01_collider06
+    4300024: prop_boardwalk_01_collider05
+    4300026: prop_boardwalk_01_collider04
+    4300028: prop_boardwalk_01_collider03
+    4300030: prop_boardwalk_01_collider02
+    4300032: prop_boardwalk_01_collider01
+    4300034: prop_boardwalk_01
+    4300036: prop_boardwalk_02
+    4300038: prop_boardwalk_03
+    4300040: prop_boardwalk_04
+    4300042: prop_boardwalk_05
+    4300044: prop_boardwalk_06
+    4300046: prop_boardwalk_07
+    4300048: prop_boardwalk_08
+    4300050: prop_boardwalk_09
+    4300052: prop_boardwalk_10
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
