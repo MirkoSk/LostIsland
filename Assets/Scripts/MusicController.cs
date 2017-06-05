@@ -4,15 +4,14 @@ using UnityEngine.Audio;
 
 public class MusicController : MonoBehaviour {
 
-    [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] private AudioMixerSnapshot quiet;
-    [SerializeField] private AudioMixerSnapshot cave;
-    [SerializeField] private AudioMixerSnapshot action;
-
-    // Use this for initialization
-    void Start () {
-	
-	}
+    [SerializeField]
+    private AudioMixer audioMixer;
+    [SerializeField]
+    private AudioMixerSnapshot quiet;
+    [SerializeField]
+    private AudioMixerSnapshot cave;
+    [SerializeField]
+    private AudioMixerSnapshot action;
 
     void OnTriggerEnter(Collider hit) {
         if (hit.gameObject.tag.Contains("Action")) {
@@ -26,9 +25,4 @@ public class MusicController : MonoBehaviour {
     void OnTriggerExit(Collider hit) {
         quiet.TransitionTo(1);
     }
-
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

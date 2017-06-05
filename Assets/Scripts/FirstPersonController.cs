@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
-using Random = UnityEngine.Random;
 
 namespace UnityStandardAssets.Characters.FirstPerson {
     [RequireComponent(typeof(CharacterController))]
@@ -12,6 +11,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         //////////////////////////////////////////////////
         // Variable Declarations
         //////////////////////////////////////////////////
+
         #region Variable Declarations
         private bool m_IsWalking;
         private float m_WalkSpeed = 5;
@@ -59,13 +59,12 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
 
 
-        #region Unity Event Functions
         //////////////////////////////////////////////////
         // Unity Event Functions
         //////////////////////////////////////////////////
 
-        // Use this for initialization
-        private void Start() {
+        #region Unity Event Functions
+        private void OnEnable() {
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
@@ -74,22 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_StepCycle = 0f;
             m_NextStep = m_StepCycle / 2f;
             m_Jumping = false;
-            m_AudioSource = GetComponent<AudioSource>();
             m_MouseLook.Init(transform, m_Camera.transform);
-        }
-
-        // This is called whenever the player collider collides with something
-        private void OnControllerColliderHit(ControllerColliderHit hit) {
-            // character on top of the colliding object?
-            if (m_CollisionFlags == CollisionFlags.Below && m_AudioSource.clip != m_JumpSound) {
-                if (hit.gameObject.tag.Contains("Wood")) {
-                    m_AudioSource.clip = m_FootstepSoundWood;
-                } else if (hit.gameObject.tag.Contains("Stone")) {
-                    m_AudioSource.clip = m_FootstepSoundStone;
-                } else {
-                    m_AudioSource.clip = m_FootstepSoundDirt;
-                }
-            }
         }
 
         // FixedUpdate is called every physics timestep
@@ -152,8 +136,27 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         }
         #endregion
 
+        // Use this for initialization
+        void Start() {
+            m_AudioSource = GetComponent<AudioSource>();
+        }
 
-        #region User defined Functions
+        // This is called whenever the player collider collides with something
+        private void OnControllerColliderHit(ControllerColliderHit hit) {
+            // character on top of the colliding object?
+            if (m_CollisionFlags == CollisionFlags.Below && m_AudioSource.clip != m_JumpSound) {
+                if (hit.gameObject.tag.Contains("Wood")) {
+                    m_AudioSource.clip = m_FootstepSoundWood;
+                } else if (hit.gameObject.tag.Contains("Stone")) {
+                    m_AudioSource.clip = m_FootstepSoundStone;
+                } else {
+                    m_AudioSource.clip = m_FootstepSoundDirt;
+                }
+            }
+        }
+
+
+
         //////////////////////////////////////////////////
         // User defined Functions
         //////////////////////////////////////////////////
@@ -174,6 +177,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_NextStep = m_StepCycle + m_StepInterval;
         }
 
+        #region User defined Functions
         private void ProgressStepCycle(float speed) {
             if (m_CharacterController.velocity.sqrMagnitude > 0 && (m_Input.x != 0 || m_Input.y != 0)) {
                 m_StepCycle += (m_CharacterController.velocity.magnitude + (speed * (m_IsWalking ? 1f : m_RunstepLenghten))) *
