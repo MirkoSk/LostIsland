@@ -30,8 +30,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         [SerializeField]
         private LerpControlledBob m_JumpBob = new LerpControlledBob();
         private float m_StepInterval = 5;
-        [SerializeField]
-        private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -46,16 +44,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         private float m_NextStep;
         private bool m_Jumping;
         #endregion
-
-        [SerializeField]
-        private AudioClip m_FootstepSoundDirt;
-        [SerializeField]
-        private AudioClip m_FootstepSoundWood;
-        [SerializeField]
-        private AudioClip m_FootstepSoundStone;
-
-        private AudioSource m_AudioSource;
-
+        
 
 
         //////////////////////////////////////////////////
@@ -137,20 +126,14 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
         // Use this for initialization
         void Start() {
-            m_AudioSource = GetComponent<AudioSource>();
+
         }
 
         // This is called whenever the player collider collides with something
         private void OnControllerColliderHit(ControllerColliderHit hit) {
             // character on top of the colliding object?
-            if (m_CollisionFlags == CollisionFlags.Below && m_AudioSource.clip != m_JumpSound) {
-                if (hit.gameObject.tag.Contains("Wood")) {
-                    m_AudioSource.clip = m_FootstepSoundWood;
-                } else if (hit.gameObject.tag.Contains("Stone")) {
-                    m_AudioSource.clip = m_FootstepSoundStone;
-                } else {
-                    m_AudioSource.clip = m_FootstepSoundDirt;
-                }
+            if (m_CollisionFlags == CollisionFlags.Below) {
+                
             }
         }
 
@@ -161,20 +144,16 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         //////////////////////////////////////////////////
 
         private void PlayFootStepAudio() {
-            if (!m_CharacterController.isGrounded) {
-                return;
-            }
-            m_AudioSource.Play();
+            
         }
 
         // Bonus Task
         private void PlayJumpSound() {
-            m_AudioSource.PlayOneShot(m_JumpSound, 0.1f);
+            
         }
 
         private void PlayLandingSound() {
-            m_AudioSource.Play();
-            m_NextStep = m_StepCycle + m_StepInterval;
+            
         }
 
         #region User defined Functions
