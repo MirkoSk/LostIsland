@@ -5,8 +5,6 @@ using UnityEngine.Audio;
 public class MusicController : MonoBehaviour {
 
     [SerializeField]
-    private AudioMixer audioMixer;
-    [SerializeField]
     private AudioMixerSnapshot quiet;
     [SerializeField]
     private AudioMixerSnapshot cave;

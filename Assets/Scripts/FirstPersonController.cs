@@ -5,7 +5,6 @@ using UnityStandardAssets.Utility;
 
 namespace UnityStandardAssets.Characters.FirstPerson {
     [RequireComponent(typeof(CharacterController))]
-    [RequireComponent(typeof(AudioSource))]
     public class FirstPersonController : MonoBehaviour {
 
         //////////////////////////////////////////////////
@@ -168,6 +167,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_AudioSource.Play();
         }
 
+        // Bonus Task
         private void PlayJumpSound() {
             m_AudioSource.PlayOneShot(m_JumpSound, 0.1f);
         }
